@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Journey from "./pages/Journey";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Navbar />
 
       <Home />
+
+      <Journey />
 
       <main>
         <section className="section">
