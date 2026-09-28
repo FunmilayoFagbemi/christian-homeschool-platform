@@ -1,0 +1,187 @@
+.home {
+  background: var(--color-cream);
+}
+
+.home-hero {
+  min-height: calc(100vh - 88px);
+
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+
+  overflow: hidden;
+}
+
+.home-hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: var(--space-4xl) 7vw;
+}
+
+.home-hero__eyebrow {
+  margin-bottom: var(--space-lg);
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--color-purple);
+}
+
+.home-hero h1 {
+  font-size: clamp(72px, 9vw, 150px);
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+
+  color: var(--color-ink);
+}
+
+.home-hero__intro {
+  max-width: 480px;
+  margin-top: var(--space-xl);
+
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.home-hero__button {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: var(--space-xl);
+  padding: 18px 24px;
+
+  background: var(--color-ink);
+  color: var(--color-white);
+
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  transition: background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.home-hero__button:hover {
+  background: var(--color-purple);
+  transform: translateY(-3px);
+}
+
+.home-hero__button span {
+  font-size: 22px;
+}
+
+.home-hero__visual {
+  position: relative;
+  min-height: 650px;
+
+  background: var(--color-purple);
+
+  overflow: hidden;
+}
+
+.home-hero__shape {
+  position: absolute;
+}
+
+.home-hero__shape--yellow {
+  width: 65%;
+  height: 65%;
+
+  top: 8%;
+  right: -12%;
+
+  background: var(--color-yellow);
+
+  border-radius: 50%;
+}
+
+.home-hero__shape--blue {
+  width: 58%;
+  height: 58%;
+
+  bottom: -14%;
+  left: -12%;
+
+  background: var(--color-blue);
+
+  border-radius: 50%;
+}
+
+.home-hero__message {
+  position: absolute;
+
+  left: 12%;
+  bottom: 12%;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.home-hero__message span {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+
+  color: var(--color-ink);
+}
+
+.home-hero__message strong {
+  margin-top: 8px;
+
+  font-size: clamp(42px, 5vw, 78px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+
+  color: var(--color-white);
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero__content {
+    min-height: 620px;
+    padding: var(--space-3xl) var(--page-padding);
+  }
+
+  .home-hero__visual {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero__content {
+    min-height: auto;
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(64px, 19vw, 88px);
+  }
+
+  .home-hero__intro {
+    font-size: 17px;
+  }
+
+  .home-hero__visual {
+    min-height: 430px;
+  }
+
+  .home-hero__message {
+    left: 8%;
+    bottom: 10%;
+  }
+}

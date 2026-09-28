@@ -1,0 +1,17 @@
+.container {
+  width: min(calc(100% - (var(--page-padding) * 2)), var(--container-width));
+  margin: 0 auto;
+}
+
+.content-container {
+  width: min(calc(100% - (var(--page-padding) * 2)), var(--content-width));
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.full-width {
+  width: 100%;
+}
