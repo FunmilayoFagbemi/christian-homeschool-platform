@@ -3,6 +3,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Journey from "./pages/Journey";
+import Toddler from "./pages/Toddler";
+import EarlyYears from "./pages/EarlyYears";
+import Primary from "./pages/Primary";
+import Teenager from "./pages/Teenager";
+import PreTeen from "./pages/PreTeen";
 
 function App() {
   return (
@@ -12,6 +17,11 @@ function App() {
       <Home />
 
       <Journey />
+      <Toddler />
+      <EarlyYears />
+      <Primary />
+      <PreTeen />
+      <Teenager />
 
       <main>
         <section className="section">
