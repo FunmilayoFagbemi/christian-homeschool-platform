@@ -1,29 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar__container">
-        <a href="/" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           CHRISTIAN
           <span>HOMESCHOOL</span>
-        </a>
+        </Link>
 
         <nav className="navbar__links">
-          <a href="/journey">Journey</a>
-          <a href="/learn">Learn</a>
-          <a href="/faith">Faith</a>
-          <a href="/create-discover">Create & Discover</a>
-          <a href="/parent-hub">Parent Hub</a>
-          <a href="/resources">Resources</a>
-          <a href="/our-story">Our Story</a>
+          <Link to="/journey">Journey</Link>
+          <Link to="/learn">Learn</Link>
+          <Link to="/faith">Faith</Link>
+          <Link to="/create-discover">Create & Discover</Link>
+          <Link to="/parent-hub">Parent Hub</Link>
+          <Link to="/resources">Resources</Link>
+          <Link to="/our-story">Our Story</Link>
         </nav>
 
-        <a href="/journey" className="navbar__cta">
+        <Link to="/journey" className="navbar__cta">
           Start the Journey
           <span>→</span>
-        </a>
+        </Link>
       </div>
     </header>
   );
