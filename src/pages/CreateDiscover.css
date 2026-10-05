@@ -1,0 +1,323 @@
+.create-discover {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* HERO */
+
+.create-discover-hero {
+  min-height: calc(100vh - 88px);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.create-discover-hero__content {
+  padding: var(--space-4xl) 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-discover-hero__eyebrow {
+  margin-bottom: var(--space-xl);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.create-discover-hero h1 {
+  max-width: 900px;
+  font-size: clamp(60px, 8vw, 130px);
+  font-weight: 900;
+  line-height: 0.84;
+  letter-spacing: -0.08em;
+}
+
+.create-discover-hero__intro {
+  max-width: 560px;
+  margin-top: var(--space-xl);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.create-discover-hero__visual {
+  min-height: 100%;
+  padding: var(--space-xl);
+
+  background: var(--color-blue);
+  color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.create-discover-hero__visual span {
+  font-size: clamp(62px, 9vw, 140px);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.09em;
+}
+
+.create-discover-hero__visual span:nth-child(1) {
+  transform: translateX(-40px);
+}
+
+.create-discover-hero__visual span:nth-child(2) {
+  transform: translateX(30px);
+}
+
+.create-discover-hero__visual span:nth-child(3) {
+  transform: translateX(-10px);
+}
+
+/* DISCOVERY AREAS */
+
+.create-discover-areas {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.create-discover-areas__intro {
+  padding: var(--space-4xl) 7vw;
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.create-discover-areas__intro > p:first-child {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.create-discover-areas__intro h2 {
+  margin-top: var(--space-xl);
+  font-size: clamp(52px, 6vw, 90px);
+  font-weight: 900;
+  line-height: 0.84;
+  letter-spacing: -0.08em;
+}
+
+.create-discover-areas__text {
+  max-width: 460px;
+  margin-top: var(--space-xl);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.create-discover-areas__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.discovery-area {
+  min-height: 190px;
+  padding: var(--space-xl);
+
+  display: grid;
+  grid-template-columns: 60px 1fr 40px;
+  align-items: center;
+  gap: var(--space-lg);
+
+  transition: transform var(--transition-medium),
+    padding-left var(--transition-medium);
+}
+
+.discovery-area__number {
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0.65;
+}
+
+.discovery-area h3 {
+  font-size: clamp(32px, 4vw, 58px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.discovery-area p {
+  max-width: 550px;
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.discovery-area__arrow {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.discovery-area--yellow {
+  background: var(--color-yellow);
+}
+
+.discovery-area--blue {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.discovery-area--green {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+.discovery-area--purple {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.discovery-area--orange {
+  background: var(--color-orange);
+}
+
+/* CLOSING STATEMENT */
+
+.create-discover-statement {
+  min-height: 70vh;
+  padding: var(--space-4xl) 7vw;
+
+  background: var(--color-ink);
+  color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-discover-statement p {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.create-discover-statement h2 {
+  margin-top: var(--space-xl);
+  font-size: clamp(80px, 14vw, 220px);
+  font-weight: 900;
+  line-height: 0.78;
+  letter-spacing: -0.1em;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .create-discover-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .create-discover-hero__visual {
+    min-height: 420px;
+  }
+
+  .create-discover-areas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .create-discover-hero__content {
+    padding: var(--space-3xl) var(--page-padding);
+  }
+
+  .create-discover-hero h1 {
+    font-size: clamp(52px, 14vw, 82px);
+  }
+
+  .create-discover-hero__intro {
+    font-size: 16px;
+  }
+
+  .create-discover-hero__visual {
+    min-height: 330px;
+  }
+
+  .create-discover-hero__visual span {
+    font-size: clamp(58px, 19vw, 96px);
+  }
+
+  .create-discover-areas__intro {
+    padding: var(--space-3xl) var(--page-padding);
+  }
+
+  .create-discover-areas__intro h2 {
+    font-size: clamp(50px, 14vw, 78px);
+  }
+
+  .create-discover-areas__text {
+    font-size: 16px;
+  }
+
+  .discovery-area {
+    min-height: 210px;
+    padding: var(--space-xl) var(--page-padding);
+    grid-template-columns: 35px 1fr 25px;
+    gap: 12px;
+  }
+
+  .discovery-area h3 {
+    font-size: clamp(30px, 10vw, 48px);
+  }
+
+  .discovery-area p {
+    font-size: 15px;
+  }
+
+  .create-discover-statement {
+    min-height: 55vh;
+    padding: var(--space-3xl) var(--page-padding);
+  }
+
+  .create-discover-statement h2 {
+    font-size: clamp(72px, 20vw, 120px);
+  }
+}
+
+/* DISCOVERY AREA INTERACTION */
+
+.discovery-area {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.discovery-area::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(-100%);
+  transition: transform var(--transition-medium);
+}
+
+.discovery-area > * {
+  position: relative;
+  z-index: 1;
+}
+
+.discovery-area:hover::before {
+  transform: translateX(0);
+}
+
+.discovery-area:hover {
+  transform: translateX(8px);
+  padding-left: calc(var(--space-xl) + 8px);
+}
+
+.discovery-area:hover .discovery-area__arrow {
+  transform: translateX(10px) scale(1.15);
+}
+
+.discovery-area__arrow {
+  transition: transform var(--transition-medium);
+}
+
+@media (max-width: 600px) {
+  .discovery-area:hover {
+    transform: none;
+    padding-left: var(--page-padding);
+  }
+}
